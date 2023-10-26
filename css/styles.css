@@ -15,7 +15,28 @@ html{
   background-color: aqua;
 }
 
+.main-containter {
+  text-align: center;
+}
 
+.header {
+margin-top: 200px;
+padding: 40px;
+font-size: 70px;
+}
+
+.check {
+margin-bottom: 30px;
+font-size: 0px;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 2500px;
+  border: #000 solid 4px;
+}
 
 
 
