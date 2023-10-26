@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
     .then(res => res.json())
     .then(data => {
+      console.log(data)
       const results = data.categories;
 
       categoryBtn.addEventListener('click', function handleCategoryBtnClick() {
@@ -27,13 +28,18 @@ document.addEventListener("DOMContentLoaded", () => {
           // Add click event to "ORDER" button
           const orderBtn = card.querySelector('.btn');
           orderBtn.addEventListener('click', function handleOrderBtnClick() {
+            
+
             fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${category.strCategory}`)
               .then(res => res.json())
               .then((data) => {
+                console.log(data);
                 const output = data.meals;
 
+                foodContainer.innerHTML = " "
+
                 for (const item of output) {
-                  const itemDisplay = document.createElement('div');       
+                  const itemDisplay = document.createElement('div');                      
                   itemDisplay.innerHTML = `
                     <div class="food-card">
                       <div class="food-header">
