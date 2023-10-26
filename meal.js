@@ -7,7 +7,13 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(data => {
       const results = data.categories;
 
-    
+      categoryBtn.addEventListener('click', function handleCategoryBtnClick() {
+        
+        // Remove the event listener after the first click
+       
+
+       
+      });
     })
     
 });
