@@ -26,7 +26,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
           // Add click event to "ORDER" button
           const orderBtn = card.querySelector('.btn');
-         
+          orderBtn.addEventListener('click', function handleOrderBtnClick() {
+            fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${category.strCategory}`)
+              .then(res => res.json())
+              .then((data) => {
+                const output = data.meals;
+
+                
+
+                for (const item of output) {
+                  const itemDisplay = document.createElement('div');       
+                  itemDisplay.innerHTML = `
+                    <div class="food-card">
+                      <div class="food-header">
+                        <img src="${item.strMealThumb}" alt="${item.strMeal}">                      
+                        <h1 class="food-text">${item.strMeal}</h1>  
+                      </div>                                        
+                    </div>`;
+                  foodContainer.appendChild(itemDisplay); // Append food items to the appropriate container
+                }
+              });
+              
+          });
           
         }
         
