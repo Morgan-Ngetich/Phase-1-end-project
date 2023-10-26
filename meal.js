@@ -8,6 +8,21 @@ document.addEventListener("DOMContentLoaded", () => {
       const results = data.categories;
 
       categoryBtn.addEventListener('click', function handleCategoryBtnClick() {
+        for (const category of results) {
+          const card = document.createElement('div');       
+          card.innerHTML = `
+            <div class="card">
+              <img src="${category.strCategoryThumb}" alt="${category.strCategory}">
+              <div class="info">
+                <h1>${category.strCategory}</h1>
+                <p>${category.strCategoryDescription}</p> 
+                <button class="btn">CHECK</button>
+              </div>
+            </div>`;
+          
+         
+          
+        }
         
         // Remove the event listener after the first click
        
