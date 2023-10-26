@@ -51,9 +51,11 @@ document.addEventListener("DOMContentLoaded", () => {
         
         // Remove the event listener after the first click
        
-
+        categoryBtn.removeEventListener('click', handleCategoryBtnClick)
        
       });
     })
-    
+    .catch(error => {
+      console.error('Error:', error);
+    });
 });
