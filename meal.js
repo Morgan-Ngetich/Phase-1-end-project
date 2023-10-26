@@ -19,7 +19,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 <button class="btn">CHECK</button>
               </div>
             </div>`;
-          
+          const foodContainer = document.querySelector('.food-container'); // Create a container for food items
+          foodContainer.className = 'food-container';
+          wrapper.appendChild(card);
+          wrapper.appendChild(foodContainer); // Append the food container
+
+          // Add click event to "ORDER" button
+          const orderBtn = card.querySelector('.btn');
          
           
         }
