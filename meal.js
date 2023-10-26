@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
           // Add click event to "ORDER" button
           const orderBtn = card.querySelector('.btn');
           orderBtn.addEventListener('click', function handleOrderBtnClick() {
-            
+            alert("You can check the available foods")
             
 
             fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${category.strCategory}`)
