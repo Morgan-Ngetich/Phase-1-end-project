@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
           const orderBtn = card.querySelector('.btn');
           orderBtn.addEventListener('click', function handleOrderBtnClick() {
             
+            
 
             fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${category.strCategory}`)
               .then(res => res.json())

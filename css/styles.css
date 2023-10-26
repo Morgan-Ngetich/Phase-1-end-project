@@ -1,5 +1,4 @@
-* {
-  
+* {  
   font-family: 'Courier New', Courier, monospace;
 }
 
@@ -12,13 +11,11 @@ html{
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  
+  align-items: center;  
 }
 
 .main-containter {
   text-align: center;
-
 }
 
 .header {
@@ -26,7 +23,6 @@ margin-top: 200px;
 padding: 40px;
 font-size: 70px;
 text-align: center;
-
 }
 
 .header span {
@@ -49,8 +45,7 @@ font-size: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 2500px;
-  border: #000 solid 8px;
+  width: 2500px;  
   background: rgba(133, 202, 194, 0.5);
   
 }
@@ -109,7 +104,6 @@ font-size: 40px;
   opacity: 0;
   transform: translateY(30px);
   transition: 0.5s all;
-
 }
 
 .card:hover .info {
@@ -166,8 +160,7 @@ font-size: 40px;
 
 .food-card img {
    width: 250px;
-  height: 300px;
-  
+  height: 300px;  
 }
 
 .food-header {
