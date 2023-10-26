@@ -32,8 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
               .then((data) => {
                 const output = data.meals;
 
-                
-
                 for (const item of output) {
                   const itemDisplay = document.createElement('div');       
                   itemDisplay.innerHTML = `
@@ -46,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   foodContainer.appendChild(itemDisplay); // Append food items to the appropriate container
                 }
               });
-              
+              orderBtn.removeEventListener('click', handleOrderBtnClick)
           });
           
         }
