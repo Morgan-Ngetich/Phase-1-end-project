@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {   
   const wrapper = document.querySelector('.wrapper');
   const categoryBtn = document.querySelector('.categoryBtn');
+  const allComments = document.querySelector('.all-comments')
 
   fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
     .then(res => res.json())
@@ -26,9 +27,9 @@ document.addEventListener("DOMContentLoaded", () => {
           wrapper.appendChild(foodContainer); // Append the food container
 
           // Add click event to "ORDER" button
-          const orderBtn = card.querySelector('.btn');
-          orderBtn.addEventListener('click', function handleOrderBtnClick() {
-            alert("You can check the available foods")
+          const checkBtn = card.querySelector('.btn');
+          checkBtn.addEventListener('click', function handleCheckBtnClick() {
+            alert("You can Now check the available foods!");
             
 
             fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${category.strCategory}`)
@@ -47,17 +48,18 @@ document.addEventListener("DOMContentLoaded", () => {
                         <img src="${item.strMealThumb}" alt="${item.strMeal}">                      
                         <h1 class="food-text">${item.strMeal}</h1>  
                       </div>                                        
-                    </div>`;
+                    </div>
+                    `;
                   foodContainer.appendChild(itemDisplay); // Append food items to the appropriate container
                 }
               });
-              orderBtn.removeEventListener('click', handleOrderBtnClick)
-          });
-          
+              checkBtn.removeEventListener('click', handleCheckBtnClick)
+
+             
+          });          
         }
         
-        // Remove the event listener after the first click
-       
+        // Remove the event listener after the first click       
         categoryBtn.removeEventListener('click', handleCategoryBtnClick)
        
       });
