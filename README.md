@@ -22,7 +22,7 @@ The program fetches data from [TheMealDB API](https://www.themealdb.com/api.php)
 
 ## How to Use the Project
 
-1. Visit this Website[https://morgan-ngetich.github.io/Phase-1-end-project/](https://morgan-ngetich.github.io/Phase-1-end-project/)
+1. Visit this Website [https://morgan-ngetich.github.io/Phase-1-end-project/](https://morgan-ngetich.github.io/Phase-1-end-project/)
 
 - For best experience adjust your ```Browser's Zoom index to 50% ```
    
