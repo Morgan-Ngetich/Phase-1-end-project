@@ -1,3 +1,4 @@
+
 # Food Menu Web App
 
 # Food Menu Web App
@@ -21,11 +22,10 @@ The program fetches data from [TheMealDB API](https://www.themealdb.com/api.php)
 
 ## How to Use the Project
 
-1. Clone this repository to your local machine.
+1. Visit this Website[https://morgan-ngetich.github.io/Phase-1-end-project/](https://morgan-ngetich.github.io/Phase-1-end-project/)
 
-   ```bash
-   git clone https://github.com/your-username/food-menu-web-app.git
-   ```
+- For best experience adjust your ```Browser's Zoom index to 50% ```
+   
 
 
 ## Features
@@ -48,12 +48,13 @@ List the key features of your project. This could be a bullet-point list or a br
 
 - [Morgan-Ngetich](https://github.com/Morgan-Ngetich)
 - [E-mail](ngetich.morgan@student.moringaschool.com)
-- [Website URL]()
+- [Website URL](https://morgan-ngetich.github.io/Phase-1-end-project/)
 
 ## License
 
 This project is licensed under the [MIT] License - see the [LICENSE.md](https://github.com/Morgan-Ngetich/Phase-1-end-project/commit/c336f668a8c229be94c2575e2462745670d0f66c) file for details.
 
 ---
+
 
 
