@@ -19,7 +19,19 @@ The program fetches data from [TheMealDB API](https://www.themealdb.com/api.php)
 
 ## How to Use the Project
 
-1. Visit this Website [https://morgan-ngetich.github.io/Phase-1-end-project/](https://morgan-ngetich.github.io/Phase-1-end-project/)
+1. Clone this repository to your local machine
+```
+ git clone git@github.com:Morgan-Ngetich/Phase-1-end-project.git
+```
+2. Navigate to the repository
+```
+cd  Phase-1-end-project
+```
+3. View your project with your default browser
+```
+explorer.exe index.html
+```
+- . Visit this Website [https://morgan-ngetich.github.io/Phase-1-end-project/](https://morgan-ngetich.github.io/Phase-1-end-project/)
 
 - For best experience adjust your ```Browser's Zoom index to 50% ```
    
