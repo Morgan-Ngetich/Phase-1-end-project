@@ -1,18 +1,19 @@
 * {  
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;   
 }
 
 html{
-  
-  
+  background-image: url('https://thumbs.dreamstime.com/z/cooking-seafood-frying-pan-vegetables-veggie-healthy-food-black-background-menu-restaurant-business-cooking-187856526.jpg?w=992');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
- body {
-  width: 100%;
-  height: 100%;
+ body { 
   display: flex;
   justify-content: center;
   align-items: center;  
 }
+
 
 .main-containter {
   text-align: center;
@@ -22,32 +23,48 @@ html{
 margin-top: 200px;
 padding: 40px;
 font-size: 70px;
+color: white;
 text-align: center;
 }
 
+
 .header span {
-  border-bottom: #000 solid 3px;
+  border-bottom: white solid 6px;
 }
 
 .check {
-margin-bottom: 30px;
-font-size: 40px;
+  color: rgb(252, 232, 3);
+  text-align:center;
+ margin-bottom: 60px;
+ font-size: 40px;
 }
 
 .categoryBtn {
+  margin-top: 20px;
+  color:black;
   font-size: 50px;
   border: 0;
   border-radius: 5px;
   background-color: greenyellow;
+  cursor:pointer;  
+  transition: 0.4s ease-in-out;
+  transform: rotate(90deg);
+  animation: tilt-shaking 1.5s;
+  
 } 
+
+.categoryBtn:hover {
+  background-color: #00c9ff;   
+  transform: translateY(30px) rotate(90deg) ;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5); 
+}
 
 .wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 2500px;  
-  background: rgba(133, 202, 194, 0.5);
-  
+  background: rgba(133, 202, 194, 0.5);  
 }
 
 
@@ -88,13 +105,11 @@ font-size: 40px;
 
 .card img {
   width: 100%;
-  height: 100%;  
-
+  height: 100%;
   object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
-
 }
 
 .card .info {
@@ -109,6 +124,7 @@ font-size: 40px;
 .card:hover .info {
   opacity: 1;
   transform: translateY(0px);
+  
 }
 
 .card .info h1 {
@@ -124,19 +140,21 @@ font-size: 40px;
 }
 
 .card .info .btn {
-  text-decoration: none;
+  text-decoration: none;  
   padding: 0.5rem 1rem;
   background: #fff;
   color: #000;
-  font-size: 14px;
+  font-size: 25px;
   font-weight: bold;
   cursor: pointer;
   transition: 0.4s ease-in-out;
-
+  border: 0;
 }
 
 .card .info .btn:hover {
+  background-color: #00c9ff;
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  border: 1px solid  #92fe9d;
 }
 
 .food-container {
@@ -144,23 +162,29 @@ font-size: 40px;
   flex-wrap: wrap;  
   padding: 10px;
   margin-top: 100px;
-  justify-content: center;   
-  width: 100%;  
+  justify-content: center;  
   border: #000 solid 5px;
   border-radius: 100px;
-
+  background-color:black;
+  opacity: 0.8;
 }
 
 
-.food-card {
- 
-  margin: 40px;  
-  
+.food-card { 
+  margin: 40px;
+  transition: 0.5s ease-in;
+  color:white;    
+}
+
+.food-card:hover {
+  transform: scale(1.1);
+  font-size: 30px;
+  color: rgb(252, 232, 3);
 }
 
 .food-card img {
    width: 250px;
-  height: 300px;  
+   height: 300px;   
 }
 
 .food-header {
@@ -168,5 +192,67 @@ font-size: 40px;
 }
 
 .food-text {
-  font-size: 20px;
+  font-size: 23px;  
 }
+
+.comment-form {
+  border: white dotted 5px;
+  margin-top: 100px;
+  margin-left: 35%;  
+  text-align:center;
+  width: 30% 
+}
+
+#text-display { 
+  margin-top : 50px;
+  text-align: center;   
+}
+
+#text-display p {
+  font-size: 25px;
+  background-color: grey;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 5px;
+  color: white;
+  text-decoration: bold;
+}
+
+.comment-form .submitBtn {  
+  margin-top:20px;
+  border: 0;
+  background-color: greenyellow;
+  cursor: pointer;  
+  border-radius: 10px;
+  transition: 0.4s ease-in-out;
+}
+
+.comment-form .submitBtn:hover {
+  background-color: #00c9ff ;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  transform: translateY(20px)
+}
+ 
+.comment-form .submitBtn img {
+  width: 55px;
+}
+
+.input-comment {  
+  padding:30px;
+  font-size: 30px;
+  color: black;  
+}
+
+h2 {
+  font-size: 35px;
+  color: white;
+}
+
+
+
+@keyframes tilt-shaking {
+  60% { transform: rotate(-360deg); 
+   }
+  
+}
+
