@@ -52,7 +52,7 @@ List the key features of your project. This could be a bullet-point list or a br
 
 ## License
 
-This project is licensed under the [MIT] License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the [MIT] License - see the [LICENSE.md](https://github.com/Morgan-Ngetich/Phase-1-end-project/commit/c336f668a8c229be94c2575e2462745670d0f66c) file for details.
 
 ---
 
