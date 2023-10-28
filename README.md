@@ -1,6 +1,3 @@
-
-# Food Menu Web App
-
 # Food Menu Web App
 
 ## Project Description
