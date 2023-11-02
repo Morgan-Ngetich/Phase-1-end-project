@@ -39,7 +39,6 @@ explorer.exe index.html
 
 ## Features
 
-List the key features of your project. This could be a bullet-point list or a brief description of what your project can do.
 
 - Feature 1: [View available food categories.]
 - Feature 2: [Explore food items in selected categories.]

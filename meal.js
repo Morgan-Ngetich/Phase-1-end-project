@@ -1,10 +1,13 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const mainContainer = document.querySelector('.main-container');
+document.addEventListener("DOMContentLoaded", () => { 
   const wrapper = document.querySelector('.wrapper');
   const categoryBtn = document.querySelector('.categoryBtn');
-  const commentDisplay = document.querySelector('.comment-display');
-  const commentList = document.querySelector('.comment-list');
-  const outputComment = document.querySelector('.comment-output')
+
+  function scrollToDiv(divId) {
+    const element = document.getElementById(divId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 
   fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
     .then(res => res.json())
@@ -13,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const results = data.categories;
 
       categoryBtn.addEventListener('click', function handleCategoryBtnClick() {
+        scrollToDiv('move-to-wrapper')
         for (const category of results) {
           const card = document.createElement('div');
           card.innerHTML = `
@@ -25,6 +29,9 @@ document.addEventListener("DOMContentLoaded", () => {
               </div>
             </div>`;
 
+         
+       
+
           const foodContainer = document.querySelector('.food-container');
           foodContainer.className = 'food-container';
 
@@ -34,9 +41,8 @@ document.addEventListener("DOMContentLoaded", () => {
           // Add click event to "ORDER" button
           const checkBtn = card.querySelector('.btn');
           checkBtn.addEventListener('click', function handleCheckBtnClick() {
-            alert("You can now check the available foods!");
+            scrollToDiv('move-to-food');
 
-           
             // Clear the food container when checking available foods
             foodContainer.innerHTML = '';
 
@@ -85,7 +91,8 @@ document.addEventListener("DOMContentLoaded", () => {
    
          // Clear the input field after submission
          textInput.value = "";
-       }
+       }    
+      
      });
      
 });

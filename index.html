@@ -6,22 +6,46 @@
   <title>Document</title>
   <link rel="stylesheet" href="./css/styles.css">
 </head>
-
 <body>
-  <div class="back-photo">
-  </div>
+  <section>
+    <!-- Navigation bar -->
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <button class="search-btn" type="submit">Search</button>
+      </div>
+    </nav>
+  </section>
 
+  <!-- Content -->
   <div class="main-container">
-    <h1 class="header"><span>𝔽𝕠𝕠𝕕 𝕄𝕖𝕟𝕦</span>.</h1>
-    <p class="check">Check Available Food Under Each Category <br> <button class="categoryBtn">&raquo;&raquo;</button></p>
-
-    <div class="wrapper">
+    <h1 class="header">𝔽𝕆𝕆𝔻 𝕄𝔼ℕ𝕌</h1>
+    <div class="description">
+      <div class="image">
+        <img src="https://img.freepik.com/premium-photo/juicy-appetizing-beef-burger-as-fast-food-cool-drink_124507-25459.jpg?w=1500">
+      </div>
+      <div class="detail">
+        <p class="best-food">THE BEST FOOD<br>
+          <span class="delicious">DELICIOUS</span><br>
+          <span class="taste-text">TASTE</span>
+        </p>
+        
+       
+        <p>
+          "Welcome to Our Restaurant – Where Every Bite is a Delight! Explore a world of exquisite flavors and culinary artistry. Our menu boasts an array of delectable dishes prepared by our skilled chefs. Experience the perfect blend of taste and ambiance that defines our restaurant. Discover your new dining destination today!"
+        </p>
+        <button class="categoryBtn">𝙴𝚡𝚙𝚕𝚘𝚛𝚎 𝙽𝚘𝚠</button>
+      </div>
     </div>
-
-    <div class="food-container">
-      
-    </div>
-
+    <div id="move-to-wrapper" class="wrapper"></div>
+    <div id="move-to-food" class="food-container"></div>
     <div class="comment-form">
       <h2>ℂ𝕠𝕞𝕞𝕖𝕟𝕥𝕤</h2>
       <form id="text-form">
@@ -30,12 +54,9 @@
           <img src="https://www.iconpacks.net/icons/2/free-icon-paper-plane-2563.png" alt="submit">
         </button>
       </form>
-      <div id="text-display">
-        
-      </div>
+      <div id="text-display"></div>
     </div>
   </div>
-
   <script src="./meal.js"></script>
 </body>
 </html>

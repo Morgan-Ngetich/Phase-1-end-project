@@ -2,84 +2,196 @@
   font-family: 'Courier New', Courier, monospace;   
 }
 
-html{
-  width:100%;
-  background-image: url('https://thumbs.dreamstime.com/z/cooking-seafood-frying-pan-vegetables-veggie-healthy-food-black-background-menu-restaurant-business-cooking-187856526.jpg?w=992');
+html{  
+  background-image: url('https://img.freepik.com/free-photo/dark-grunge-texture-background-with-scratches-stains_1048-18915.jpg');
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  width:100%;
 }
- body { 
+
+.header{  
+  margin-top: 200px;
+  margin-bottom: 50px;
+  color: white;
+  font-size: 70px;
+  text-align: center;
+}
+
+.description {
+   margin: 40px; 
+  margin-bottom: 80PX;    
+  border: solid white 1px;
+  padding: 50px;
+  width: fit-content;
+  height: 1000px;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+
+.description .best-food {
+  color:  #ff9900;
+  font-size: 50px;
+  font-family: monospace;
+}
+p .delicious {
+  color: white;  
+  font-size: 200px;
+  font-family: serif;
+}
+
+.taste-text {
+  color:  #ff9900;
+  font-size: 90px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.description .image {
+  margin-right: 50px;
+  float: left;
+  box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.5);
+}
+
+.detail {
+  margin-top: 150px;   
+}
+/* Navigation bar */
+nav { 
+  display: flex;
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  justify-content: space-between; 
+  align-items: center; 
+  margin-left: 25%;
+  background-color: #333;
+  padding: 35px; 
+  width: 1700px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 70px; /* Adjust the spacing between navigation items */
+  font-size: 35px;
+}
+
+nav a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ff9900;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  margin-right: 5px; /* Adjust the spacing between the input and the button */
+  border: none;
+  border-radius: 3px;
+  padding: 20px;
+  width: 200px;
+  font-size: 20px;
+}
+
+.search-box button {
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  background-color: #ff9900;
+  padding: 5px 10px;  
+  color: #fff;
+  font-size: 25px;
+}
+
+.search-box button.search-btn {
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  background-color: #ff9900;
+  padding: 10px 15px; /* Adjust button padding */
+  color: #fff;
+  font-size: 25px;
+}
+
+.search-box button.search-btn:hover {
+  transform: translateY(2px);
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  background-color: #00c9ff;
+}
+
+
+
+body { 
+  
   display: flex;
   justify-content: center;
   align-items: center;  
 }
 
-
 .main-containter {
   text-align: center;
 }
 
-.header {
-margin-top: 200px;
-padding: 40px;
-font-size: 70px;
-color: white;
-text-align: center;
-}
 
 
-.header span {
-  border-bottom: white solid 6px;
-}
-
-.check {
-  color: rgb(252, 232, 3);
-  text-align:center;
- margin-bottom: 60px;
- font-size: 40px;
-}
-
-.categoryBtn {
+.categoryBtn {  
+  animation: tilt-shaking 1.5s;  
+  transition: 0.4s ease-in-out;
+  cursor:pointer;
   margin-top: 20px;
-  color:black;
-  font-size: 50px;
   border: 0;
   border-radius: 5px;
   background-color: greenyellow;
-  cursor:pointer;  
-  transition: 0.4s ease-in-out;
-  transform: rotate(90deg);
-  animation: tilt-shaking 1.5s;
+  padding: 20px;
+  color:black;
+  font-size: 25px;
   
 } 
 
 .categoryBtn:hover {
-  background-color: #00c9ff;   
-  transform: translateY(30px) rotate(90deg) ;
-  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5); 
+  transform: translateY(30px);
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  background-color: #00c9ff;
 }
 
 .wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-left: 300px;  
+  background: rgba(133, 202, 194, 0.5);
   width: 2500px;  
-  background: rgba(133, 202, 194, 0.5);  
 }
 
 
 .card {
-  width: 400px;
-  height: 550px;
-  padding: 2rem 1rem;
-  margin: 20px;
-  background: #fff;
-  position: relative;
   display: flex;
+  position: relative;
   align-items: flex-end;
+  transition: 0.5s ease-in-out;
+  margin: 20px;
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
-  transition: 0.5s ease-in-out; 
+  background: #fff;
+  padding: 2rem 1rem;
+  width: 400px;
+  height: 550px; 
 }
 
 .card:hover {
@@ -87,17 +199,17 @@ text-align: center;
 }
 
 .card:before {
-  content: "";
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(to bottom, rgba(0, 176,155, 0.5), rgba(150, 201,61, 1));
+  opacity: 0;
   z-index: 2;
   transition: 0.5s all;
-  opacity: 0;  
+  background-image: linear-gradient(to bottom, rgba(0, 176,155, 0.5), rgba(150, 201,61, 1));
+  width: 100%;
+  height: 100%;
+  content: "";  
 }
 
 .card:hover::before {
@@ -105,26 +217,26 @@ text-align: center;
 }
 
 .card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .card .info {
   position: relative;
-  z-index: 3;
-  color: #fff;
-  opacity: 0;
   transform: translateY(30px);
+  opacity: 0;
+  z-index: 3;
   transition: 0.5s all;
+  color: #fff;
 }
 
 .card:hover .info {
-  opacity: 1;
   transform: translateY(0px);
+  opacity: 1;
   
 }
 
@@ -133,54 +245,54 @@ text-align: center;
 }
 
 .card .info p {
-  letter-spacing: 1;
-  font-size: 15px;
   margin-top: 8px;
   margin-bottom: 20px;
   width:fit-content ;
+  font-size: 15px;
+  letter-spacing: 1;
 }
 
 .card .info .btn {
-  text-decoration: none;  
-  padding: 0.5rem 1rem;
-  background: #fff;
-  color: #000;
-  font-size: 25px;
-  font-weight: bold;
-  cursor: pointer;
   transition: 0.4s ease-in-out;
+  cursor: pointer;
   border: 0;
+  background: #fff;  
+  padding: 0.5rem 1rem;
+  color: #000;
+  font-weight: bold;
+  font-size: 25px;
+  text-decoration: none;
 }
 
 .card .info .btn:hover {
-  background-color: #00c9ff;
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
   border: 1px solid  #92fe9d;
+  background-color: #00c9ff;
 }
 
 .food-container {
   display: flex;
-  flex-wrap: wrap;  
-  padding: 10px;
-  margin-top: 100px;
-  justify-content: center;  
+  flex-wrap: wrap;
+  justify-content: center;
+  opacity: 0.8;
+  margin-top: 100px;  
   border: #000 solid 5px;
   border-radius: 100px;
-  background-color:black;
-  opacity: 0.8;
+  background-color:black;  
+  padding: 10px;
 }
 
 
-.food-card { 
+.food-card {
+  transition: 0.5s ease-in; 
   margin: 40px;
-  transition: 0.5s ease-in;
   color:white;    
 }
 
 .food-card:hover {
   transform: scale(1.1);
-  font-size: 30px;
   color: rgb(252, 232, 3);
+  font-size: 30px;
 }
 
 .food-card img {
@@ -197,11 +309,11 @@ text-align: center;
 }
 
 .comment-form {
-  border: white dotted 5px;
   margin-top: 100px;
-  margin-left: 35%;  
-  text-align:center;
-  width: 30% 
+  margin-left: 35%;
+  border: white dotted 5px;
+  width: 30%;  
+  text-align:center 
 }
 
 #text-display { 
@@ -210,28 +322,28 @@ text-align: center;
 }
 
 #text-display p {
-  font-size: 25px;
+  margin: 5px;
+  border: 1px solid #ccc;
   background-color: grey;
   padding: 10px;
-  border: 1px solid #ccc;
-  margin: 5px;
   color: white;
+  font-size: 25px;
   text-decoration: bold;
 }
 
-.comment-form .submitBtn {  
-  margin-top:20px;
-  border: 0;
-  background-color: greenyellow;
-  cursor: pointer;  
-  border-radius: 10px;
+.comment-form .submitBtn {
   transition: 0.4s ease-in-out;
+  cursor: pointer;  
+  margin-top:20px;
+  border: 0;  
+  border-radius: 10px;
+  background-color: greenyellow;
 }
 
 .comment-form .submitBtn:hover {
-  background-color: #00c9ff ;
+  transform: translateY(20px);
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
-  transform: translateY(20px)
+  background-color: #00c9ff 
 }
  
 .comment-form .submitBtn img {
@@ -240,20 +352,16 @@ text-align: center;
 
 .input-comment {  
   padding:30px;
-  font-size: 30px;
-  color: black;  
+  color: black;
+  font-size: 30px;  
 }
 
-h2 {
-  font-size: 35px;
-  color: white;
-}
 
 
 
 @keyframes tilt-shaking {
-  60% { transform: rotate(-360deg); 
-   }
+  100% { transform: rotate(360deg);
+}
   
 }
 
