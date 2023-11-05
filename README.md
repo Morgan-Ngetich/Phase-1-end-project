@@ -31,10 +31,7 @@ cd  Phase-1-end-project
 ```
 explorer.exe index.html
 ```
-- . Visit this Website [https://morgan-ngetich.github.io/Phase-1-end-project/](https://morgan-ngetich.github.io/Phase-1-end-project/)
-
-- For best experience adjust your ```Browser's Zoom index to 50% ```
-   
+- . Visit this Website [https://morgan-ngetich.github.io/Phase-1-end-project/](https://morgan-ngetich.github.io/Phase-1-end-project/) 
 
 
 ## Features
