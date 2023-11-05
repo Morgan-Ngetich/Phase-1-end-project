@@ -12,16 +12,14 @@ html{
 }
 
 .header{  
-  margin-top: 200px;
-  margin-bottom: 50px;
+  margin-top: 200px;  
   color: white;
   font-size: 70px;
   text-align: center;
 }
 
 .description {
-   margin: 40px; 
-  margin-bottom: 80PX;    
+  margin: 40px;       
   border: solid white 1px;
   padding: 50px;
   width: fit-content;
@@ -51,10 +49,15 @@ p .delicious {
 }
 
 .description .image {
+  position: relative;
   margin-right: 50px;
   float: left;
-  box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.5);
-}
+  
+  overflow: hidden;
+	animation: 30s slide infinite;
+} 
+/* Add these styles for the image slider*/
+
 
 .detail {
   margin-top: 150px;   
@@ -364,4 +367,44 @@ body {
 }
   
 }
+
+
+
+.slide-main {
+  position: relative;
+  width: 400%; /* Adjust the width based on the number of images */
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: left;
+  overflow: hidden;
+    
+}
+
+.slide-main img {
+  width: 25%; /* Adjust the width based on the number of images */
+  float: left;
+  
+}
+
+.slide-container {
+	height: 100%;
+	width: 55%;
+	overflow: hidden;
+  float: left;
+  box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes slide { 
+	0%  { left: 0%; }
+	20% { left: 0%; }
+	25% { left: -100%; }
+	45% { left: -100%; }
+	50% { left: -200%; }
+	70% { left: -200%; } 
+	75% { left: -300%; }
+	90% { left: -300%; }	
+	100% { left: 0%; }  
+}
+
 

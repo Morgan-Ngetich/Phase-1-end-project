@@ -1,3 +1,9 @@
+
+function startSlider(){
+  const slider = document.querySelector(".slide-main");
+  slider.style.animation = "slide 30s infinite";
+}
+
 document.addEventListener("DOMContentLoaded", () => { 
   const wrapper = document.querySelector('.wrapper');
   const categoryBtn = document.querySelector('.categoryBtn');
@@ -94,6 +100,8 @@ document.addEventListener("DOMContentLoaded", () => {
        }    
       
      });
+
+     startSlider();
      
 });
 
